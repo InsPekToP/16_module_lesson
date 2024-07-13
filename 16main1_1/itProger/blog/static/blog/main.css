@@ -1,0 +1,13 @@
+body{
+    background: #f8f7f7;
+}
+
+.alert-light{
+    border-color: #bfbfbf;
+}
+
+/* сейчас футер растянут,делаем по центру */
+footer{
+    width: 70%;
+    margin-left: 15%;
+}
