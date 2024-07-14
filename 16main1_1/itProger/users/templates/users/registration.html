@@ -6,7 +6,7 @@
 
   {% block content %}
     <h1>{{ title }}</h1>
-    <form method="post">
+    <form method="post" class="form-register">
         <!-- ключ безопасности -->
         {% csrf_token %}
         <!-- выводим форму,кот только что создали в views.py -->

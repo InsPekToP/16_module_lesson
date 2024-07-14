@@ -1,8 +1,9 @@
 from django.shortcuts import render,redirect
 # from django.contrib.auth.forms import UserCreationForm
 from .forms import UserRegisterForm
-#создавать разные типы сообщений
 from django.contrib import messages
+#создавать разные типы сообщений
+
 
 # def register(request):
 #     form = UserCreationForm()
@@ -23,7 +24,8 @@ def register(request):
         form = UserRegisterForm(request.POST)
         #проверка на правильность данных
         if form.is_valid():
-            #form.save()
+#чтобы сохранять зарегистрированых пользователей в БД надо эту строчку раскоментить
+            # form.save()
             #очищенные данные(не понятно)
             username = form.cleaned_data.get('username')
             #messages.info()
