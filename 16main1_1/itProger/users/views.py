@@ -25,7 +25,7 @@ def register(request):
         #проверка на правильность данных
         if form.is_valid():
 #чтобы сохранять зарегистрированых пользователей в БД надо эту строчку раскоментить
-            # form.save()
+            form.save()
             #очищенные данные(не понятно)
             username = form.cleaned_data.get('username')
             #messages.info()
