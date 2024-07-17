@@ -5,6 +5,15 @@ body{
 .alert-light{
     border-color: #bfbfbf;
 }
+
+.user_images{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
 .form-register{
     padding: 20px;
     background: #fafafa;
