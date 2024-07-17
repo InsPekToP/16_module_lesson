@@ -17,3 +17,20 @@
 
 #теперь делаем разные кнопки для авторизованых и не авторизованых поль-лей
 
+#для выхода из системы
+#   <form action="{% url 'exit' %}" class="ml-2" method="post">
+#               {% csrf_token %}
+#               <button type="submit" class="btn btn-outline-info">Выйти</button>
+#             </form>
+
+
+#отслеживание профиля пользователя в urls.py
+#path('profile/',userViews.profile, name='profile'),
+
+#создаем новую ф-ию в views.py
+#def profile(request):
+    #return render(request, 'users/profile.html')
+#теперь надо сделать,чтобы эту страницу было видно только зарег. пол-лям
+#делаем декоратор(@login_required)
+#from django.contrib.auth.decorators import login_required
+#перекидывает не туда куда нужно,для этого в settings.py пишем LOGIN_URL = 'user'
